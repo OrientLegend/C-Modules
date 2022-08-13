@@ -1,9 +1,16 @@
 #include <cstdio>
-import Foo;
+import MergeSort;
 
 int main()
 {
-    printf("%d\n", f(6));
-    printf("%lf", g(0.0, 1));
+    int arr[int(1e5 + 1)];
+
+    for (int i = 0; i < 1e5; ++i) {
+        arr[i] = 1e5 - i;
+    }
+    merge_sort(arr, 0, 1e5 - 1);
+    for(int& x: arr) {
+        printf("%d ", x);
+    }
     return 0;
 }
