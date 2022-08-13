@@ -1,7 +1,7 @@
 export module MergeSort;
 #include <vector>
 
-export void merge(int tar[], int low, int mid, int high) {
+void merge(int tar[], int low, int mid, int high) {
   int *arr = new int[high - low + 1];
   int i = low, j = mid + 1, k = 0;
   while (i <= mid && j <= high) {

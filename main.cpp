@@ -3,7 +3,7 @@ import MergeSort;
 
 int main()
 {
-    int arr[int(1e5 + 1)];
+    int arr[int(1e5)];
 
     for (int i = 0; i < 1e5; ++i) {
         arr[i] = 1e5 - i;
